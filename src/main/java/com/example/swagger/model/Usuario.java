@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-// CRIA PARA MIM OS MEUS GET SET DOS MEUS METODOS!!
+//Cria os Get Set dos meus atributos!!
 import lombok.Data;
 
 @Entity//ELE FAZ COM OQUE A CLASSE SEJA ULTILIZADA PARA CRIAR A TABELA NO BANCO DE DADOS
@@ -29,5 +29,5 @@ public class Usuario {
     @Column(name = "password")
     private String password;
     //#endregion
-    
+
 }
