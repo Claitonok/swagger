@@ -48,7 +48,7 @@ public class UsuarioController {
      * @param id 
      * @return RETORNA OS DADOS DO BANCO DE DADOS PELO {id}
      */
-    @Operation(summary = "Nesse enpoint retorna todos os dados pelo Id do usuario!", description = "Retorna os dados do banco de dados pelo - {id}")
+    @Operation(summary = "Nesse endpoint retorna todos os dados pelo Id do usuario!", description = "Retorna os dados do banco de dados pelo - {id}")
     @GetMapping("/{id}")
     public ResponseEntity<Optional<Usuario>> obterPorId(@PathVariable Integer id){
         

@@ -21,6 +21,9 @@ public class UsuarioService {
      */
     public List<Usuario> ObterTodos(){
         List<Usuario> usuario = usuarioRepository.findAll();
+         if (usuario.isEmpty()) {
+            System.err.println("Nenhum usuario cadastrado!!");
+        }
         return usuario;
     }
 
